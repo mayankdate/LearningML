@@ -1,3 +1,30 @@
+# ---------- Project Specific ----------
+
+# ---------- SECRETS / CREDENTIALS (highest priority) ----------
+*_key.txt
+*_token.txt
+.Renviron
+.env
+.env.*
+# The shared API-keys folder referenced by the LLM pass
+00.APIKeys/
+
+# ---------- Specific Outputs ----------
+# Source-of-truth workbook and all its variants
+Output/journal_enriched.xlsx
+Output/journal_LLM_context.csv
+Output/*.xlsx
+Output/*.csv
+Output/*.json
+Output/*.png
+Output/*.html
+
+# ---------- Specific Data ----------
+Data/
+*.xlsx
+*.xlsm
+!**/templates/*.xlsx      # (allow template stubs if you ever add them)
+
 # ---------- R ----------
 .Rproj.user/
 .Rhistory
@@ -22,9 +49,3 @@ __pycache__/
 .DS_Store
 Thumbs.db
 desktop.ini
-
-# ---------- Project ----------
-Outputs
-ds4bio_book-main
-*.rds
-Documents

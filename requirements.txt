@@ -1,0 +1,28 @@
+# Data and numerical computing
+numpy
+pandas
+scipy
+
+# Plotting
+matplotlib
+seaborn
+
+# Statistics and machine learning
+statsmodels
+scikit-learn
+
+# Excel files
+openpyxl
+
+# Jupyter / VS Code notebook kernel
+ipykernel
+
+# Utilities
+requests
+tqdm
+python-dotenv
+beautifulsoup4
+
+#AI
+openai
+anthropic
