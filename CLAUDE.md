@@ -57,7 +57,8 @@ RStudio using `LearningML.Rproj`.
   (RStudio Plots pane) or to a path relative to the script's working directory.
   Do not introduce a shared `Output/` folder without the owner's approval.
 - **Run order:** `00. RunAllScripts.R` sources 01–15 sequentially. It does not
-  run 16–20 (Python notebooks) — open those in Jupyter.
+  run 16–20 (Python notebooks) — run `uv sync` once, then open those with the
+  `.venv` kernel. Add a Python package with `uv add <pkg>`, never `!pip install`.
 
 ## Commands
 
