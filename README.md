@@ -41,10 +41,18 @@ source("Scripts/00. RunAllScripts.R")
 source("Scripts/03. Random Forest.R")
 ```
 
-For Python notebooks (16–20), open them in Jupyter.
+For Python notebooks (16–20), set up the environment once with [uv](https://docs.astral.sh/uv/):
+
+```bash
+uv sync
+```
+
+Then open a notebook in VS Code and pick `.venv` as the kernel. The `!pip install` lines inside
+the notebooks are no longer needed; `pyproject.toml` lists every package they use. PyTorch
+runs on the CPU by default; `pyproject.toml` explains the three-line switch to the GPU.
 
 ## Requirements
 
 - R 4.0+ with `pacman` (`install.packages("pacman")`)
 - Each script auto-installs its own R packages via `pacman::p_load()`
-- Python 3.8+ for notebooks 16–20
+- [uv](https://docs.astral.sh/uv/) for notebooks 16–20 (installs Python 3.14 and the packages in `uv.lock`)
